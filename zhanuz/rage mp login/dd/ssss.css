@@ -1,0 +1,11 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(to bottom, #000000cc, #000000ee),
+                url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover no-repeat;
+}

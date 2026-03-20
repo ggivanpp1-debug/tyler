@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.logo{
+    width: 100px;
+    height: 95px;
+    border-radius: 50px;
+}
+.menu a{
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    text-decoration: none;
+}
+main{
+    background-color: rgb(133, 133, 133);
+}
+footer{
+    background-color: black;
+}

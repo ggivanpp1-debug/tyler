@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  min-height: 100vh;
+}
+
+/* Основная карточка */
+.fl-card {
+  max-width: 1000px;
+  width: 100%;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding: 28px 30px 35px 30px;
+}
+
+/* Верхняя часть */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.remote-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: #1e2a3a;
+  background: #f1f4f9;
+  padding: 6px 18px;
+  border-radius: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.remote-title i {
+  color: #2b4a7a;
+}
+
+/* Кнопки заказов */
+.order-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.order-btn {
+  background: white;
+  border: 1.5px solid #d0d9e4;
+  color: #1e2a3a;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 28px;
+  border-radius: 60px;
+  cursor: pointer;
+  background: #f9fbfd;
+  transition: all 0.2s;
+}
+
+.order-btn:first-child {
+  background: #1e2a3a;
+  border-color: #1e2a3a;
+  color: white;
+}
+
+.order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Сетка категорий */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px 25px;
+  margin-bottom: 40px;
+  background: #f7f9fc;
+  padding: 20px 22px;
+  border-radius: 28px;
+  border: 1px solid #e9ecf2;
+}
+
+.cat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1d2b3f;
+  padding: 6px 0;
+  border-bottom: 1px dashed #dce3ec;
+}
+
+.cat-item i {
+  width: 24px;
+  color: #3f5a8c;
+  font-size: 1.2rem;
+}
+
+/* Секция сообщений */
+.messages-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.message-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 70px;
+  padding: 10px 20px 10px 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.02);
+  flex-wrap: wrap;
+}
+
+.vyach-card {
+  margin-top: 28px;
+}
+
+/* Аватарки */
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #c0cfdf, #a2b6cc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.avatar.andrew {
+  background: #3e6b9c;
+}
+
+.avatar.polina {
+  background: #b35e7c;
+}
+
+.avatar.vyach {
+  background: #2b5f5f;
+}
+
+/* Контент сообщения */
+.message-content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px 25px;
+}
+
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+}
+
+.name-row strong {
+  font-weight: 700;
+  color: #0f1c30;
+}
+
+.badge {
+  background: #eef3fa;
+  border-radius: 50px;
+  padding: 5px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1f3a6b;
+  border: 1px solid #cdd9e9;
+  white-space: nowrap;
+}
+
+.badge i {
+  margin-right: 5px;
+  color: #1e7e34;
+}
+
+.message-preview {
+  color: #4d627c;
+  font-weight: 500;
+  font-size: 1.05rem;
+  background: #f2f6fc;
+  padding: 4px 18px;
+  border-radius: 40px;
+  border: 1px solid #dee6f0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.message-preview i {
+  font-size: 0.9rem;
+  color: #798ea8;
+}
+
+/* Разные теги */
+.dev-fragment {
+  background: #eaf0f8;
+  border-radius: 30px;
+  padding: 6px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #12315e;
+  border: 1px solid #b8ceea;
+  white-space: nowrap;
+}
+
+.dev-tag {
+  background: #dfe8f5;
+  border-radius: 30px;
+  padding: 4px 18px;
+  font-weight: 600;
+  color: #113255;
+  font-size: 1rem;
+  border: 1px solid #c0d0e8;
+  white-space: nowrap;
+}
+
+.windows-activation {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e1e9f3;
+  border-radius: 30px;
+  padding: 5px 22px;
+  font-weight: 600;
+  color: #20456e;
+}
+
+/* Cookie уведомление */
+.cookie-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3f6fb;
+  border-radius: 60px;
+  padding: 14px 25px 14px 30px;
+  margin-top: 15px;
+  border: 1px solid #dae1ec;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.cookie-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a2b3e;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cookie-text i {
+  color: #a8b9d0;
+}
+
+.cookie-btn {
+  background: #1e2f44;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: 1px solid #142433;
+  transition: background 0.2s;
+}
+
+.cookie-btn:hover {
+  background: #2c405a;
+}
+
+/* Нижняя часть */
+hr {
+  border: none;
+  border-top: 2px solid #e4eaf2;
+  margin: 15px 0 10px 0;
+}
+
+.agreement-line {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 18px;
+  color: #556c88;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding-left: 15px;
+  flex-wrap: wrap;
+}
+
+.agreement-line i {
+  color: #3f6190;
+}
+
+.protection-badge {
+  margin-left: auto;
+  color: #8ca0bc;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Адаптация под мобильные */
+@media (max-width: 800px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fl-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  .top-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .message-card {
+    border-radius: 30px;
+  }
+}

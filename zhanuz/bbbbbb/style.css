@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    background: #000;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: crimson;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* HERO */
+
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #000, #1a1a1a);
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.primary {
+    background: crimson;
+    color: white;
+}
+
+.primary:hover {
+    background: darkred;
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.secondary:hover {
+    background: white;
+    color: black;
+}
+
+.large {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.dark {
+    background: #1c1c1c;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    width: 30%;
+    min-width: 250px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    background: #2b2b2b;
+}
+
+/* FOOTER */
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px 0;
+    color: gray;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
